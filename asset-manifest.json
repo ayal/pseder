@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pseder/static/css/main.073c9b0a.css",
+    "main.js": "/pseder/static/js/main.f3dfc8fe.js",
+    "static/js/787.6a37dcf0.chunk.js": "/pseder/static/js/787.6a37dcf0.chunk.js",
+    "index.html": "/pseder/index.html",
+    "main.073c9b0a.css.map": "/pseder/static/css/main.073c9b0a.css.map",
+    "main.f3dfc8fe.js.map": "/pseder/static/js/main.f3dfc8fe.js.map",
+    "787.6a37dcf0.chunk.js.map": "/pseder/static/js/787.6a37dcf0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.f3dfc8fe.js"
+  ]
+}
