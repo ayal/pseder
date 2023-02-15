@@ -35,7 +35,7 @@ function App() {
         <a href="javascript:void(0);" onClick={() => setTimeWindow(1000 * 60 * 60 * 24 * 7 * 4 * 3)}>last 3 months</a>
         <a href="javascript:void(0);" onClick={() => setTimeWindow(1000 * 60 * 60 * 24 * 7 * 4)}>last month</a>
         <a href="javascript:void(0);" onClick={() => setTimeWindow(1000 * 60 * 60 * 24 * 7)}>last week</a>
-        <a href="javascript:void(0);" onClick={() => setTimeWindow(undefined)}>reset</a>
+        <a href="javascript:void(0);" onClick={() => setTimeWindow(undefined)}>all</a>
       </div>
       {
         all?.map((showData) => {
