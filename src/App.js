@@ -1,31 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
 
-const getShows = async (start, end) => {
-  const res = await (await fetch(`https://ayalgelles6.wixsite.com/my-site-4/_functions/pseder?start=${start}&end=${end}&t=1`)).json();
-  return res;
-}
-
-const sleep = (t) => new Promise(res => setTimeout(res, t))
 
 function App() {
-
   const [all, setAll] = useState();
 
   useEffect(() => {
     (async () => {
-      let all = [];
-      const res = await getShows(0, 10);
-      all = all.concat(res.items);
-      const count = res.count;
-      for (let i = 10; i < count - 10; i += 10) {
-        //await sleep(1000);
-        const newres = await getShows(i, i + 10);
-        //console.log('>pseder results', all, newres);
-        all = all.concat(newres.items);
-      }
-      console.log('>pseder all results', all);
+      const all = await (await fetch('/all-results.json')).json();
       setAll(all);
     })()
   }, [])
