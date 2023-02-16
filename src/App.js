@@ -23,7 +23,7 @@ function App() {
 
   useEffect(() => {
     (async () => {
-      const all = await (await fetch('all-results.json')).json();
+      const all = await (await fetch(`all-results.json?t=${Date.now()}`)).json();
       setAll(all);
     })()
   }, [])
