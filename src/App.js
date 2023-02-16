@@ -29,7 +29,7 @@ const isInSearch = (showData, search) => {
     return true;
   }
   return showData?.data?.some((showInstance) => {
-    return `${showInstance.broadcaster} ${showInstance.subtitle ? `/ ${showInstance.subtitle} /` : `/`} ${showInstance.date_display}`.toLowerCase().match(search.toLowerCase())
+    return `${showInstance.broadcaster} ${showInstance.subtitle ? `/ ${showInstance.subtitle} /` : `/`} ${showInstance.date_display} ${atob(showInstance.src)}`.toLowerCase().match(search.toLowerCase())
   })
 }
 
