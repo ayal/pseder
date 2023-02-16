@@ -4951,6 +4951,35 @@
     },
     {
         "show": {
+            "id": "10825",
+            "section": "shows",
+            "url": "https://www.teder.fm/shows/10825",
+            "title": "החדר",
+            "broadcaster": "דלפי",
+            "lineup": "",
+            "excerpt": "מידי חודש ההסכת יארח  אמן או אמנית שעתידים להציג תערוכה בחדר ויספרו על תהליכי היצירה, השראות ומה הם חושבים על עולם האומנות בפרט ועל העולם בכלל.",
+            "image": "https://www.teder.fm/images/5796t.jpg?1",
+            "categories": "shows"
+        },
+        "data": [
+            {
+                "id": "10826",
+                "show_id": 10825,
+                "date": "2023-02-15",
+                "date_display": "15.02.23",
+                "year": "2023",
+                "month": "02",
+                "subtitle": "פרק 1 -  קארן אטיאס",
+                "broadcaster": "דלפי",
+                "image": "https://www.teder.fm/images/5796t.jpg?1",
+                "src": "MTUuMDIuMjNfLV9oZWRlcj8xMTY3NjQ3OTY2NA==",
+                "tracklist": "",
+                "tracklist_dir": "tracklist_rtl"
+            }
+        ]
+    },
+    {
+        "show": {
             "id": "11",
             "section": "events",
             "url": "https://www.teder.fm/events/11",
@@ -91907,91 +91936,6 @@
                 "broadcaster": "Markey Funk",
                 "image": "https://www.teder.fm/images/831t.jpg?1",
                 "src": "MTguMDEuMTdfLV9tYXJreS1mdW5rPzExNDg0NjkwNDAw",
-                "tracklist": "",
-                "tracklist_dir": "tracklist_rtl"
-            }
-        ]
-    },
-    {
-        "show": {
-            "id": "993",
-            "section": "events",
-            "url": "https://www.teder.fm/events/993",
-            "title": "ליל כל הגרזנים",
-            "broadcaster": "",
-            "lineup": "הנוקמים2\r\n(רייסקינדר והילה רוח)\r\n\r\nAutarkic\r\n\r\nAbrao\r\n\r\nRed Axes Live 4",
-            "excerpt": "ליל הגרזנים בניצוחם של רד אקסס \r\n הנוקמים 2 (רייסקינדר + הילה רוח)\r\nרד אקסס 4 (דורי סדובניק, ניב ארזי, רועי חן, עמיתקס קורח)\r\nAutarkic , Abrao",
-            "image": "https://www.teder.fm/images/834t.jpg?1",
-            "categories": ""
-        },
-        "data": [
-            {
-                "id": "1176",
-                "show_id": 993,
-                "date": "2017-01-20",
-                "date_display": "20.01.17",
-                "year": "2017",
-                "month": "01",
-                "subtitle": "Yovav",
-                "broadcaster": "Yovav",
-                "image": "https://www.teder.fm/images/834t.jpg?1",
-                "src": "MjAuMDEuMTdfLV95b3Zhdj8xMTQ4NDk0MjQwMA==",
-                "tracklist": "",
-                "tracklist_dir": "tracklist_rtl"
-            },
-            {
-                "id": "1172",
-                "show_id": 993,
-                "date": "2017-01-20",
-                "date_display": "20.01.17",
-                "year": "2017",
-                "month": "01",
-                "subtitle": "Abrao live from bvrly",
-                "broadcaster": "Abrao live from bvrly",
-                "image": "https://www.teder.fm/images/834t.jpg?1",
-                "src": "MjAuMDEuMTdfLV9hYnJhbz8xMTQ4NDg2MzIwMA==",
-                "tracklist": "",
-                "tracklist_dir": "tracklist_rtl"
-            },
-            {
-                "id": "1173",
-                "show_id": 993,
-                "date": "2017-01-20",
-                "date_display": "20.01.17",
-                "year": "2017",
-                "month": "01",
-                "subtitle": "הנוקמים2 (רייסקינדר והילה רוח)",
-                "broadcaster": "הנוקמים2 (רייסקינדר והילה רוח)",
-                "image": "https://www.teder.fm/images/834t.jpg?1",
-                "src": "MjAuMDEuMTdfLV9ub2ttaW0yPzExNDg0ODYzMjAw",
-                "tracklist": "",
-                "tracklist_dir": "tracklist_rtl"
-            },
-            {
-                "id": "1174",
-                "show_id": 993,
-                "date": "2017-01-20",
-                "date_display": "20.01.17",
-                "year": "2017",
-                "month": "01",
-                "subtitle": "Red Axes Live 4",
-                "broadcaster": "Red Axes Live 4",
-                "image": "https://www.teder.fm/images/834t.jpg?1",
-                "src": "MjAuMDEuMTdfLV9yZWRfYXhlc19saXZlPzExNDg0ODYzMjAw",
-                "tracklist": "",
-                "tracklist_dir": "tracklist_rtl"
-            },
-            {
-                "id": "1175",
-                "show_id": 993,
-                "date": "2017-01-20",
-                "date_display": "20.01.17",
-                "year": "2017",
-                "month": "01",
-                "subtitle": "Red Axes Dj Set At Romano",
-                "broadcaster": "Red Axes Dj Set At Romano",
-                "image": "https://www.teder.fm/images/834t.jpg?1",
-                "src": "MjAuMDEuMTdfLV9yZWRfYXhlc19yb21hbm8/MTE0ODQ4NjMyMDA=",
                 "tracklist": "",
                 "tracklist_dir": "tracklist_rtl"
             }
