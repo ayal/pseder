@@ -54,10 +54,13 @@ function App() {
             <div>{parseHtmlEntities(showData.show.title)}</div>
             {
               showData?.data?.map((showInstance, i) => {
-                return isInTime(showInstance, timeWindow) ? <div>
+                return isInTime(showInstance, timeWindow) ? <div style={{display:'flex', justifyContent:'center', gap:'4px'}}>
                   <a target='_blank' rel="noreferrer" onClick={() => {
                     console.log(showData);
-                  }} href={`https://www.teder.fm/archive?show=${showData.show.id}&listen=${showInstance.id}`}>{`${showInstance.broadcaster} ${showInstance.subtitle ? `/ ${showInstance.subtitle} /` : `/`}  ${showInstance.date_display}`}</a>
+                  }} href={`https://www.teder.fm/archive?show=${showData.show.id}&listen=${showInstance.id}`}>
+                    {`${showInstance.broadcaster} ${showInstance.subtitle ? `/ ${showInstance.subtitle} /` : `/`} ${showInstance.date_display}`}
+                    </a>
+                    <div style={{fontSize:'10px', display: 'flex', alignItems: 'center'}}>{`(${atob(showInstance.src)})`}</div>
                 </div> : null
               })
             }
