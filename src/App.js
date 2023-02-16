@@ -37,7 +37,7 @@ const isInSearch = (showData, search) => {
 function App() {
   const [all, setAll] = useState();
   const [search, setSearch] = useState('');
-  const [timeWindow, setTimeWindow] = useState(1000 * 60 * 60 * 24 * 7 * 4);
+  const [timeWindow, setTimeWindow] = useState();
 
   useEffect(() => {
     (async () => {
