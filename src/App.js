@@ -48,12 +48,13 @@ function App() {
 
   return (
     <div className="App" style={{ display: 'flex', flexDirection: 'column' }}>
-      <div style={{ display: 'flex', alignItems: 'center', 'justifyContent': 'center', gap: '5px' }}>
-        <a href="javascript:void(0);" onClick={() => setTimeWindow(1000 * 60 * 60 * 24 * 7 * 4 * 6)}>last 6 months</a>
-        <a href="javascript:void(0);" onClick={() => setTimeWindow(1000 * 60 * 60 * 24 * 7 * 4 * 3)}>last 3 months</a>
-        <a href="javascript:void(0);" onClick={() => setTimeWindow(1000 * 60 * 60 * 24 * 7 * 4)}>last month</a>
-        <a href="javascript:void(0);" onClick={() => setTimeWindow(1000 * 60 * 60 * 24 * 7)}>last week</a>
-        <a href="javascript:void(0);" onClick={() => setTimeWindow(undefined)}>all</a>
+      <div style={{ display: 'flex', alignItems: 'center', 'justifyContent': 'center', gap: '6px' }}>
+        <a href="javascript:void(0);" onClick={() => setTimeWindow(1000 * 60 * 60 * 24 * 7 * 4 * 6)}>[6 months]</a>
+        <a href="javascript:void(0);" onClick={() => setTimeWindow(1000 * 60 * 60 * 24 * 7 * 4 * 3)}>[3 months]</a>
+        <a href="javascript:void(0);" onClick={() => setTimeWindow(1000 * 60 * 60 * 24 * 7 * 4)}>[1 month]</a>
+        <a href="javascript:void(0);" onClick={() => setTimeWindow(1000 * 60 * 60 * 24 * 7 * 2)}>[2 weeks]</a>
+        <a href="javascript:void(0);" onClick={() => setTimeWindow(1000 * 60 * 60 * 24 * 7)}>[1 week]</a>
+        <a href="javascript:void(0);" onClick={() => setTimeWindow(undefined)}>[all]</a>
       </div>
       <div style={{ width: '100px' }}>
         <input value={search} placeholder='filter' onChange={(e) => {
