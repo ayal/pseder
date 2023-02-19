@@ -54,10 +54,11 @@ function useQueryParam(
   fn = x=>x,
 ) {
   let [searchParams, setSearchParams] = useSearchParams();
+  console.log('search params', searchParams.toString());
   let paramValue = searchParams.get(key);
 
   let setValue = (newValue, options) => {
-      let newSearchParams = new URLSearchParams(window.location.search);
+      let newSearchParams = new URLSearchParams(window.location.hash.slice(2));
       newSearchParams.set(key, newValue);
       setSearchParams(newSearchParams, options);
     };
