@@ -1,7 +1,6 @@
 import './App.css';
-import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { memo, useEffect, useRef, useState } from 'react';
 import { Routes, Route, useSearchParams } from "react-router-dom";
-import * as JSURL from "jsurl";
 import debounce from 'lodash/debounce';
 
 
@@ -136,6 +135,8 @@ function Comp() {
     })()
   }, [])
 
+  console.log('rendering main comp', all?.length);
+
   return (
     <div className="App" style={{ display: 'flex', flexDirection: 'column' }}>
       <div style={{ display: 'flex', alignItems: 'center', 'justifyContent': 'center', gap: '6px' }}>
@@ -159,6 +160,7 @@ function Comp() {
 }
 
 function App() {
+  console.log('rendering app');
   return <Routes>
     <Route index element={<Comp />} />
   </Routes>
