@@ -4,16 +4,27 @@ import { Routes, Route, useSearchParams } from "react-router-dom";
 import debounce from 'lodash/debounce';
 
 
+function unEscape(htmlStr) {
+  htmlStr = htmlStr.replace(/&lt;/g , "<");	 
+  htmlStr = htmlStr.replace(/&gt;/g , ">");     
+  htmlStr = htmlStr.replace(/&quot;/g , "\"");  
+  htmlStr = htmlStr.replace(/&#39;/g , "\'");   
+  htmlStr = htmlStr.replace(/&amp;/g , "&");
+  return htmlStr;
+}
 
 function parseHtmlEntities(str) {
   if (!str) {
     return '';
   }
-  return str.replace(/&#([0-9]{1,3});/gi, function (match, numStr) {
+  const res = str.replace(/&#([0-9]{1,3});/gi, function (match, numStr) {
     var num = parseInt(numStr, 10); // read num as normal number
     return String.fromCharCode(num);
   });
+  return unEscape(res);
 }
+
+
 
 const _isInTime = (showInstance, timeWindow) => {
   if (!timeWindow) {
