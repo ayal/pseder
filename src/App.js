@@ -3,7 +3,7 @@ import './App.css';
 import { useEffect, useState } from 'react';
 
 const getShows = async (start, end) => {
-  const res = await (await fetch(`https://ayalgelles6.wixsite.com/my-site-4/_functions/pseder?start=${start}&end=${end}&t=1`)).json();
+  const res = await (await fetch(`https://ayalgelles6.wixsite.com/my-site-4/_functions/pseder?start=${start}&end=${end}&t=${Date.now()}`)).json();
   return res;
 }
 
