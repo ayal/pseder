@@ -19378,6 +19378,20 @@
         },
         "data": [
             {
+                "id": "10922",
+                "show_id": 2290,
+                "date": "2023-03-01",
+                "date_display": "01.03.23",
+                "year": "2023",
+                "month": "03",
+                "subtitle": "",
+                "broadcaster": "Doktor Muzik",
+                "image": "https://www.teder.fm/images/2638t.jpg?1",
+                "src": "MDEuMDMuMjNfLV9pZG8tc3VjaG8/MTE2Nzc2NTgwODY=",
+                "tracklist": "",
+                "tracklist_dir": "tracklist_rtl"
+            },
+            {
                 "id": "10891",
                 "show_id": 2290,
                 "date": "2023-02-22",
