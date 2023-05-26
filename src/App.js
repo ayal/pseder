@@ -92,7 +92,7 @@ const Results = memo(({ all, search, timeWindow }) => {
         return null;
       }
 
-      console.log('> hasShowInTime?', parseHtmlEntities(showData?.show?.broadcaster), isShowInSearchAndTime(showData, search, timeWindow));
+      //console.log('> hasShowInTime?', parseHtmlEntities(showData?.show?.broadcaster), isShowInSearchAndTime(showData, search, timeWindow));
 
       return <div style={{ padding: '10px', flexDirection: 'column' }}>
         <div>{parseHtmlEntities(showData?.show?.broadcaster)}</div>
@@ -142,7 +142,9 @@ function Comp() {
 
   useEffect(() => {
     (async () => {
-      const all = await (await fetch(`all-results.json?t=${Date.now()}`)).json();
+      const resp = await (await fetch(`https://ayalgelles6.wixsite.com/my-site-4/_functions/allresults?t=${Date.now()}`)).json();
+      const all = resp.items;
+      console.log('>got-all', all?.length);
       setAll(all);
     })()
   }, [])
